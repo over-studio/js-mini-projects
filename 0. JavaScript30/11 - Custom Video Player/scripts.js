@@ -42,7 +42,9 @@ video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
 
 toggle.addEventListener('click', togglePlay);
+
 skipButtons.forEach(btn => btn.addEventListener('click', skip));
+
 ranges.forEach(range => range.addEventListener('change', handleRangeChange))
 
 let mousedown = false;
